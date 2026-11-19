@@ -1,0 +1,8 @@
+
+config domoticz
+	option disabled '1'
+	option loglevel '7'
+	option syslog 'daemon'
+	option sslwww '0'
+	option userdata '/lib/domoticz/'
+
