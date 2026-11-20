@@ -37,7 +37,7 @@ repository_zip() {
 		if curl -fsSL --retry 2 --connect-timeout 15 \
 			-o "$archive" "https://github.com/szelessavalapitvany/$repo/archive/refs/heads/$branch.zip"; then
 			if unzip -t "$archive" >/dev/null 2>&1; then
-				printf '%s\\n' "$branch"
+				printf '%s\n' "$branch"
 				return 0
 			fi
 		fi
